@@ -1,0 +1,70 @@
+/* Universal selector and elements */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+    font-family: Arial;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Header properties */
+
+.header {
+    padding: 18px;
+    font-family: 'courier new', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:cadetblue;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 52px;
+}
+
+.header h1 .Tran {
+    color:midnightblue;
+}
+
+/* Navigation properties */
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    float: right;
+    font-family: 'courier new', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 90px;
+    position: relative; top:20px;
+}
+/*  Main Image - custom designed */
+
+.mainimage {
+    margin-bottom: 20px;
+}
+
+.mainimage img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
