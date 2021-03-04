@@ -26,6 +26,9 @@ p {
     padding: 18px;
     font-family: 'courier new', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:rgb(36, 36, 36); 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .header h1 {
@@ -40,9 +43,12 @@ p {
     position:relative; left: 75;
 }
 
-.header h1 .Tran {
-    color:black;
-    position: relative; left: 50;
+h1::after {
+    color:rgb(53, 52, 52);
+    position: relative; 
+    left: 75;
+    content: "Tran";
+
 }
 
 /* Navigation properties */
@@ -58,6 +64,7 @@ p {
 
 .header nav ul {
     list-style-type: none;
+   
 }
 
 .header nav ul li {
@@ -66,6 +73,7 @@ p {
     position: relative; top:20px; right:40px;
     border-bottom: 2px solid cadetblue;
     position: relative;
+ 
 }
 /*  Main Image - custom designed */
 
@@ -86,47 +94,115 @@ p {
     letter-spacing: 1;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
-    
 }
+
+
 #subtitleherecool {
     background-color: cadetblue;
     letter-spacing: 1;
     font-style:italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
 }
 
-.flex {
-    display: flex;
+main .flex {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap:wrap;
 }
 
-.box {
+.box-1 {
     height: 300px;
     width:18%;
     text-align:center;
     color: rgb(19, 149, 224);
     font-family:'Courier New', Courier, monospace;
     font-size: 50px;
+    font-weight:bolder;
     padding: 5px;
-    border-right: 4px solid cadetblue;
+    border-right: 4px solid rgb(53, 52, 52);
     text-align: right;
-    margin: 5px;
+    margin: 15px;
+
 }
 
-.box1 {
+.box-1-1 {
     background-color: royalblue;
     height: 300px;
     width: 300px;
-    margin: 0px 70px;
-    
+    margin: 10px 40px; 
 }
 
-.box2 {
+.box-1-2 {
     height:300px;
-    width: 800px;
+    width: 50%;
     line-height: 30px;
     color: black;
-    margin-top: 15px;
-    
+    margin: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;  
 }
 
+.box-2 {
+    width:18%;
+    color: rgb(19, 149, 224);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight:bolder;
+    padding: 5px;
+    border-right: 4px solid rgb(53, 52, 52);
+    text-align: right;
+    margin: 15px;
+}
+
+#portfolio-flex {
+    max-width: 72%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    width:48%;
+    background-color: cadetblue;
+    margin: 11px 0px;
+    padding: 10px;
     
+}
+.portfoliomajor {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #coolsubtitlehere {
+        text-align: center;
+    }
+
+    .box-1 {
+        border-right: none;
+        height: auto;
+        width:100%;
+        text-align:center;
+    }
+
+    .header nav ul {
+        text-align: center;
+    }
+
+    .box-1-2 {
+        width: auto;
+        height: auto;
+    }
+
+    .box-2 {
+        height:auto;
+        border: none;
+    }
+    .portfolio-item {
+        width:85%;
+        margin: 25px 25px;
+    }
+    #portfolio-flex {
+        max-width: none;
+    }  
+}
