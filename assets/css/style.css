@@ -106,6 +106,8 @@ h1::after {
     font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
 }
 
+/* Main content */
+
 main .flex {
   display: flex; 
   flex-direction: row;
@@ -125,6 +127,7 @@ main .flex {
     margin: 15px; 
 
 }
+/* recent photo with styling */
 
 .recentphoto {
     background-color: royalblue;
@@ -144,11 +147,13 @@ main .flex {
     font-family:Georgia, 'Times New Roman', Times, serif;  
 }
 
+/* portfolio section  */
+
 
 
 #portfolio-flex {
+
     max-width: 72%;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -160,24 +165,19 @@ main .flex {
     background-color: cadetblue;
     margin: 11px 0px;
     padding: 10px;
-    
-}
-.portfoliomajor {
-    width: 100%;
+
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    background-color: rgb(53, 52, 52);
-    color: #fff;
-    margin-top: 15px;
+.portfoliomajor {
+    width: 96%;
 }
+
+
 
 #flexcontact  {
     max-width: 100%;
     display: flex; 
+    flex-direction: row; 
     flex-wrap: wrap; 
     margin-top: 10px;
     margin-left:35px;
@@ -192,6 +192,16 @@ footer {
 
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: rgb(53, 52, 52);
+    color: #fff;
+    margin-top: 15px;
+}
+
+/* responsive properties  */
 
 @media only screen and (max-width: 600px) {
     #coolsubtitlehere {
