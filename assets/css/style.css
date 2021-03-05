@@ -6,6 +6,12 @@
     color:whitesmoke;
 }
 
+:root {
+    --theme: rgb(53, 52, 52);
+    --highlight1: cadetblue;
+    --highlight2: rgb(19, 149, 224);
+}
+
 body {
     background-color: whitesmoke;
     font-family: Arial;
@@ -25,7 +31,7 @@ p {
 .header {
     padding: 18px;
     font-family: 'courier new', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:rgb(36, 36, 36); 
+    background-color: var(--theme);
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -33,7 +39,7 @@ p {
 
 .header h1 {
     display: inline-block;
-    background-color: rgb(19, 149, 224);
+    background-color: var(--highlight2);
     font-size: 52px;
     letter-spacing: 1.5;
     width: 370px;
@@ -46,7 +52,7 @@ p {
 }
 
 h1::after {
-    color:rgb(53, 52, 52);
+    color: var(--theme);
     position: relative; 
     left: 75;
     content: "Tran";
@@ -73,7 +79,7 @@ h1::after {
     display: inline-block;
     margin-left: 90px;
     position: relative; top:20px; right:40px;
-    border-bottom: 2px solid cadetblue;
+    border-bottom: 2px solid var(--highlight1);
     position: relative;
  
 }
@@ -100,7 +106,7 @@ h1::after {
 
 
 #subtitleherecool {
-    background-color: cadetblue;
+    background-color: var(--highlight1);
     letter-spacing: 1;
     font-style:italic;
     font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
@@ -117,12 +123,12 @@ main .flex {
 .sidenav {
     width:18%;
     text-align:center;
-    color: rgb(19, 149, 224);
+    color: var(--highlight2);
     font-family:'Courier New', Courier, monospace;
     font-size: 50px;
     font-weight:bolder;
     padding: 5px;
-    border-right: 4px solid rgb(53, 52, 52);
+    border-right: 4px solid var(--theme);
     text-align: right;
     margin: 15px; 
 
@@ -130,19 +136,19 @@ main .flex {
 /* recent photo with styling */
 
 .recentphoto {
-    background-color: royalblue;
+    background-color: var(--highlight2);
     height: 300px;
     width: 300px;
     margin: 20px 40px; 
     border-radius: 20px;
-    box-shadow: 3px 3px rgb(53, 52, 52);
+    box-shadow: 3px 3px var(--theme);
 }
 
 .detail {
     height:300px;
     width: 50%;
     line-height: 30px;
-    color: black;
+    color: var(--theme);
     margin: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;  
 }
@@ -162,7 +168,7 @@ main .flex {
 
 .portfolio-item {
     width:48%;
-    background-color: cadetblue;
+    background-color: var(--highlight1);
     margin: 11px 0px;
     padding: 10px;
 
@@ -186,7 +192,7 @@ main .flex {
 .contactimage {
     height:80px;
     border-radius: 20px;
-    border:solid rgb(53, 52, 52);
+    border:solid var(--theme);
     margin-top: 3px;
     margin-left:35px;
 
@@ -196,7 +202,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 2%;
-    background-color: rgb(53, 52, 52);
+    background-color: var(--theme);
     color: #fff;
     margin-top: 15px;
 }
