@@ -83,6 +83,12 @@ h1::after {
     position: relative;
  
 }
+
+nav a:hover {
+    color: var(--highlight2);
+    font-weight: bolder;
+}
+
 /*  Main Image -  */
 
 .mainimage {
